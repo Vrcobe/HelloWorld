@@ -2,7 +2,7 @@
     using System.Collections.Generic;
     using UnityEngine;
 
-
+//He cambiado un documento
 namespace clasePlayer{
 
     class enemy : character

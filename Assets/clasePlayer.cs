@@ -10,7 +10,10 @@ namespace clasePlayer{
         public enemy(string name) : base(name)
         {
         }
+
+
     }
+
 
 
     class player : character
@@ -18,6 +21,12 @@ namespace clasePlayer{
     {
         public player(string name) : base(name)
         {
+
+        }
+
+        public override void TakeDamage()
+        {
+            HealthPoints=HealthPoints;
         }
     }
 }

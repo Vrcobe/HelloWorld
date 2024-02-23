@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 namespace clasePlayer
 {
-    public class character
+    public abstract class character
     {
 
         public string name;
@@ -14,14 +14,19 @@ namespace clasePlayer
         public character(string name)
         {
             this.name = name;
-            healthPoints = 10;
+            this.healthPoints = 10;
             Debug.Log("Hola, soy" + name);
         }
 
-     
+        public int HealthPoints { get => healthPoints; set => healthPoints = value; }
+
         public int getKills()
         {
             return kills;
+        }
+        public virtual void TakeDamage()
+        {
+            healthPoints -= 1;
         }
     }
 }

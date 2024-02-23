@@ -15,6 +15,9 @@ using clasePlayer;
 
             player = new player("MainCharacter");
             enemy = new enemy("Enemy");
+            Debug.Log("La vida del enemigo es " + enemy.HealthPoints);
+        enemy.TakeDamage();
+        Debug.Log("Después de que le hayan atacado, su nueva vida es de " + enemy.HealthPoints);
         }
 
         // Update is called once per frame
